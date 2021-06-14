@@ -1,4 +1,4 @@
-export class Tarefas 
+export class Tarefa
 {
     constructor(
         public id?: number,

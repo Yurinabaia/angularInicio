@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { TarefasModule } from './tarefas';
+import { TarefaService } from './tarefas/shared';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +16,7 @@ import { TarefasModule } from './tarefas';
     AppRoutingModule,
     TarefasModule
   ],
-  providers: [],
+  providers: [TarefaService], //Todo serviço é importado no providers.
   bootstrap: [AppComponent]
 })
 export class AppModule { }
