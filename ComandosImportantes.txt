@@ -1,0 +1,32 @@
+ng test --> teste unitarios.
+ng E2E --->  teste de usuario. 
+ng serve --> compilar em desenvolvimento
+ng build --> compilar em produção
+
+
+ng g module calculadora.  --> Criando modulo da aplicação.
+
+
+//Componente é ideal ter apenas uma unica função.
+
+ng g component calculadora/calculadora --> criando componente da calculadora.
+
+
+//O serviço seria basicamente as regras de negocios que vamos aplicar no codigo.
+
+ng g service calculadora/services/calculadora --> criando os service para nossa aplicação.
+
+//Instalar boodtrap no Angular versão mais nova
+npm install --save bootstrap
+
+é preciso colocar o seguinte comando no angular.json
+
+ "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"//esse comando
+            ],
+
+//Instalar boodtrap no angular versões antigas
+npm install --save bootstrap@3
+
+
