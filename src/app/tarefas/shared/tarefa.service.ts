@@ -17,6 +17,7 @@ export class TarefaService {
     const tarefas = this.listaTarefas();
     tarefa.id = new Date().getTime();
     tarefas.push(tarefa);
+    console.log(tarefa.id);
     localStorage['tarefas'] = JSON.stringify(tarefas);//Convertendo jso para string
   } 
 
@@ -30,7 +31,7 @@ export class TarefaService {
     const tarefas: Tarefa[] =  this.listaTarefas();
     tarefas.forEach((obj, index, objs)=> 
     {
-      if(tarefas.id === obj.id) 
+      if(tarefa.id === obj.id) 
       {
         objs[index] = tarefa;
       }
@@ -49,7 +50,7 @@ export class TarefaService {
     tarefas.forEach((obj, index, objs) => 
     {
       if(id === obj.id) {
-        objs[index].concluido = !obj.concluido;
+        objs[index].concluida = !obj.concluida;
       }
     });
     localStorage['tarefas'] = JSON.stringify(tarefas);
